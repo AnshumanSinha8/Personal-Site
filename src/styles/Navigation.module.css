@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  }
+
+.box {
+  border: 1px solid #fed;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
