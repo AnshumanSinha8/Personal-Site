@@ -1,9 +1,18 @@
 import styles from 'src/styles/Contact.module.css';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Contact(){
     return(
         <div className={styles.contact}>
-            This is a thrid box!
+            <div className={styles.form}>Contact Me!</div>
+            <div>
+                <div className={styles.profile}>
+                    <FaGithub/>
+                    Github</div>
+                <div className={styles.profile}>
+                    <FaLinkedin/>
+                    Linkedin</div>
+            </div>
         </div>
     )
 }
