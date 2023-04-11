@@ -29,7 +29,9 @@ So to sumrize:
 - Set up SQL table --> COMPLETED
 - Set up Prisma Schema and Client. --> COMPLETED
 - Connect through .env --> COMPLETED
+- I feel like I've currently completed everything properly up to here.
 - Create Prisma Schema --> COMPLETED
+- I think I did this step correctly, but definitely still have questions. First bugs likely appearing here.
 - Create GraphQL-Yoga Schema --> IN PROGRESS
 - Connect GraphQL with Prisma resolvers --> IN PROGRESS
 - GraphQL fetch from database
