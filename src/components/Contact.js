@@ -5,7 +5,7 @@ function Contact(){
     return(
         <div className={styles.contact}>
             <div className={styles.form}>Contact Me!</div>
-            <div>
+            <div className={styles.profileWrapper}>
                 <div className={styles.profile}>
                     <FaGithub/>
                     Github</div>

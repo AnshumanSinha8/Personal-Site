@@ -1,11 +1,24 @@
 .contact {
-  border: 1px solid black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile{
-  border: 1px solid purple;
+  margin-top: 10px;
 }
 
 .form {
   border: 1px solid red;
+  margin-top: 10px;
+}
+
+.profileWrapper {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
 }
