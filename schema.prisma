@@ -26,3 +26,7 @@ model BlogPostSection {
 
   post BlogPost @relation(fields: [postId], references: [id])
 }
+
+generator client {
+  provider = "prisma-client-js"
+}
