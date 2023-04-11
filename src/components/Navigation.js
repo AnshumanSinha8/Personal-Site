@@ -1,11 +1,12 @@
 import styles from 'src/styles/Navigation.module.css';
+import Link from 'next/link';
 
 function Navigation () {
   return (
     <div className={styles.navigation}>
-      <div className={styles.box}> Box 1 </div>
-      <div className={styles.box}> Box 2 </div>
-      <div className={styles.box}> Box 3 </div>
+      <a href="/blog" className={styles.box}>Blog</a>
+      <Link href="/" className={styles.box}>Home</Link>
+      <a href="/blog" className={styles.box}>Projects</a>
     </div>
   )
 }
