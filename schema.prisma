@@ -1,0 +1,28 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model BlogPost {
+  id      Int    @id @default(autoincrement())
+  author  String @default("Your Name")
+  date    DateTime
+  title   String
+  summary String
+  type    String
+  length  Int
+  likes   Int    @default(0)
+  
+  sections BlogPostSection[]
+}
+
+model BlogPostSection {
+  id               Int    @id @default(autoincrement())
+  sectionHeader    String
+  subsectionHeader String?
+  content          String
+  listItems        String?
+  postId           Int
+
+  post BlogPost @relation(fields: [postId], references: [id])
+}
