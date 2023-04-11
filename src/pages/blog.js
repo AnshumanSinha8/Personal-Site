@@ -26,10 +26,12 @@ In order to connect this Blog to a backend database I need to do the following:
     - I think I will try with API routes first bc from what I understand they're more optimized.
 
 So to sumrize:
-- Set up SQL table
-- Set up Prisma Schema and Client.
-- Connect through .env
-- Connect GraphQL with Prisma resolvers
+- Set up SQL table --> COMPLETED
+- Set up Prisma Schema and Client. --> COMPLETED
+- Connect through .env --> COMPLETED
+- Create Prisma Schema --> COMPLETED
+- Create GraphQL-Yoga Schema --> IN PROGRESS
+- Connect GraphQL with Prisma resolvers --> IN PROGRESS
 - GraphQL fetch from database
 
 - Honetly this seems like a lot. Especially since now I need to develop this front end Blog stuff to interact with the graphQL routes and database.
