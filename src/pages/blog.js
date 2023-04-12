@@ -32,10 +32,12 @@ So to sumrize:
 - I feel like I've currently completed everything properly up to here.
 - Create Prisma Schema --> COMPLETED
 - I think I did this step correctly, but definitely still have questions. First bugs likely appearing here.
+- ACtually, going to remove Prisma from the project. I don't think the database will need to be interacted with much and can add as an extension later if needed.
 - Create GraphQL-Yoga Schema --> IN PROGRESS
-- Connect GraphQL with Prisma resolvers --> IN PROGRESS
-- GraphQL fetch from database
+- Connect GraphQL Server with database --> IN PROGRESS
+- GraphQL fetch from database --> 
 
 - Honetly this seems like a lot. Especially since now I need to develop this front end Blog stuff to interact with the graphQL routes and database.
 - But I have to do it because otherwise how will I learn how to actually build and accomplish these engineering feats and not just algorithms!
+- One thing I need to learn more about is the file structuring and typical routes for  this in Next.js. The APIs go through the pages component, but I wonder how exactly that translates from the typical 'server' directory in most other React applications.
 */
