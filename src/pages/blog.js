@@ -1,7 +1,18 @@
+const posts = [
+    {title: 'testing', excerpt: 'Learn Testing'},
+    {title: 'React', excerpt: 'Learn React'}
+]
+
 export default function Blog() {
     return (
-        <div>
+        <div className ="grid">
             Blog
+            {posts.map((posts, index) => (
+                <div key = {index}>
+                    {posts.title}
+                    {posts.excerpt}
+                </div>
+            ))}
         </div>
     )
 }
