@@ -1,4 +1,4 @@
-import styles from 'src/styles/HomeStyles/Navigation.module.css';
+import styles from 'src/styles/Navigation.module.css';
 import Link from 'next/link';
 
 function Navigation () {
