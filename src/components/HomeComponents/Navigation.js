@@ -6,7 +6,7 @@ function Navigation () {
     <div className={styles.navigation}>
       <a href="/blog" className={styles.box}>Blog</a>
       <Link href="/" className={styles.box}>Home</Link>
-      <a href="/blog" className={styles.box}>Projects</a>
+      <a href="/projects" className={styles.box}>Projects</a>
     </div>
   )
 }

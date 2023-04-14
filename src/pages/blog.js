@@ -1,6 +1,6 @@
 // import styles from 'src/styles/Blog.module.css';
 import Card from '../components/BlogComponents/Card.js'
-
+import styles from '../styles/Blog.module.css'
 
 const posts = [
     {title: 'testing', excerpt: 'Learn Testing'},
@@ -9,18 +9,14 @@ const posts = [
 
 export default function Blog() {
     return (
-        <div className ="grid">
+        <div className={styles.blog}>
             <div>
-                {posts.map((posts, index) => (
-                    <div key = {index}>
-                        {posts.title}{' '}
-                        {posts.excerpt}
-                    </div>
+                {posts.map((post) => ( <Card post={post} key={post.title}/>
                     ))
                 }
             </div>
             <div>
-                <Card></Card>
+                temp
             </div>
         </div>
     )
