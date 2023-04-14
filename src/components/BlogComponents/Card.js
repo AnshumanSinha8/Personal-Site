@@ -1,10 +1,12 @@
-// import styles from 'src/styles/Card.module.css';
+import styles from 'src/styles/BlogStyles/Card.module.css';
+import React from 'react';
 
 
-function Card(){
+function Card({ post }){
     return(
-        <div>
-            Card :c
+        <div className={styles.card}>
+            {post.title}{' '}
+            {post.excerpt}
         </div>
     )
 }
