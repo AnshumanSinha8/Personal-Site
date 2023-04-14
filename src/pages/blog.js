@@ -1,7 +1,27 @@
+// import styles from 'src/styles/Blog.module.css';
+import Card from '../components/BlogComponents/Card.js'
+
+
+const posts = [
+    {title: 'testing', excerpt: 'Learn Testing'},
+    {title: 'React', excerpt: 'Learn React'}
+]
+
 export default function Blog() {
     return (
-        <div>
-            Blog
+        <div className ="grid">
+            <div>
+                {posts.map((posts, index) => (
+                    <div key = {index}>
+                        {posts.title}{' '}
+                        {posts.excerpt}
+                    </div>
+                    ))
+                }
+            </div>
+            <div>
+                <Card></Card>
+            </div>
         </div>
     )
 }
