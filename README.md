@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Introduction
 This project serves as a place for me to experiment on technologies but also have a place to show off some of my work. If you are a potential client or employer, welcome! Please take a look around and utilize the 'Contact Me' component on my home page to connect. I have built this project with Next.js - a React framework - Javascript, CSS, SQL databases, and many other technologies. I would love to talk about this or any of the projects I have featured here in greater detail!
 
-Whether you're a fellow NYU alumn or stranger everything here is open-source and I try my best to explain each technology or decision I've made through an article in my 'blog' page. Please feel free to clone this open-source project as well as read my thoughts whenever you might have questions about what I have done.
+Whether you're a fellow NYU alumn or stranger everything here is open-source and I try my best to explain each technology or decision I've made through an article in my 'blog' page. Please feel free to clone this open-source project and read my thoughts whenever you might have questions about what I have done. The database I have used is a MySQL database in a production enviornment through PlanetScale so to learn more about connecting between the backend of this application and the frontend, check out some of the blog posts to find out how I did it and what schemas I used!
 
 ## Getting Started
 To run this project locally:
