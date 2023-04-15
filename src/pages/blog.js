@@ -1,7 +1,10 @@
 // import styles from 'src/styles/Blog.module.css';
-import Card from '../components/BlogComponents/Card.js'
-import styles from '../styles/BlogStyles/Blog.module.css'
-import Navigation from '../components/Navigation.js'
+import Navigation from '../components/Navigation.js';
+import Card from '../components/BlogComponents/Card.js';
+import Header from '../components/Header.js'
+import Filter from '../components/BlogComponents/Filter.js';
+import styles from '../styles/BlogStyles/Blog.module.css';
+
 
 const posts = [
     {title: 'testing', excerpt: 'Learn Testing'},
@@ -11,14 +14,15 @@ const posts = [
 export default function Blog() {
     return (
         <div className={styles.blog}>
-            <div>
+            <Header />
+            <Navigation />
+            <div className={styles.postsContainer}>
                 {posts.map((post) => ( <Card post={post} key={post.title}/>
                     ))
                 }
             </div>
-            <Navigation />
             <div>
-                temp
+                <Filter />
             </div>
         </div>
     )
