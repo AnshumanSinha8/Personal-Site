@@ -5,7 +5,7 @@ import React from 'react';
 function Filter({ post }){
     return(
         <div className={styles.filter}>
-            temp
+            Filter
         </div>
     )
 }
