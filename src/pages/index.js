@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import styles from '../styles/HomeStyles/Home.module.css'
 import Header from '../components/Header.js'
 import Navigation from '../components/Navigation.js'
 import Contact from '../components/HomeComponents/Contact.js'
-
-const inter = Inter({ subsets: ['latin'] })
 
 const headerContent = {
   title: 'Hey, I\'m Anshu', excerpt: 'A freelance software engineer - welcome to my website!'
