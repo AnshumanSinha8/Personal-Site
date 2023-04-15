@@ -8,10 +8,15 @@ const projects = [
     {title: 'Snake 3000', excerpt: 'An early project to build a retro-styled snake game'}
 ]
 
+const headerContent = {
+    title: 'Hey, I\'m Anshu', excerpt: 'A freelance engineer - welcome to my website!'
+};
+
+
 export default function Projects() {
     return (
         <div className={styles.projectsPage}>
-            <Header />
+            <Header headerContent={headerContent}/>
             <Navigation />
             <div>
                 {projects.map((project) => ( <ProjectsContainer project={project} key={project.title}/>

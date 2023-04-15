@@ -7,6 +7,10 @@ import Contact from '../components/HomeComponents/Contact.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const headerContent = {
+  title: 'Hey, I\'m Anshu', excerpt: 'A freelance engineer - welcome to my website!'
+};
+
 export default function Home() {
   return (
     <>
@@ -18,7 +22,7 @@ export default function Home() {
       </Head>
       <main className={styles.home}>
         <div>
-          <Header></Header>
+          <Header headerContent={headerContent}/>
           <Navigation></Navigation>
           <Contact></Contact>
         </div>

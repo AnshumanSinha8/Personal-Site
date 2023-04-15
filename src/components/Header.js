@@ -1,15 +1,10 @@
 import styles from 'src/styles/Header.module.css';
 
-// const message = [{
-//   home: 'A freelance software engineer - welcome to my website!',
-//   blog: 'Welcome to my blog!'
-// }];
-
-function Header({ props }) {
+function Header({ headerContent }) {
   return (
     <div className={styles.header}>
-      <h1>Hey, I&apos;m Anshu</h1>
-      <p> A freelance software engineer - welcome to my website!</p>
+      <h1> {headerContent.title} </h1>
+      <p> {headerContent.excerpt} </p>
     </div>
   );
 }
