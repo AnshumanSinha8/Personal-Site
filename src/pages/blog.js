@@ -11,7 +11,7 @@ const posts = [
     {title: 'React', excerpt: 'Learn React'}
 ]
 const headerContent = {
-    title: 'Welcome to my Blog!', excerpt: `Here you  can read my thoughts on things that matter to me. From technology to my travels I write articles over diverse topics so be sure to search for anything you might be interested in!`
+    title: 'Welcome to my Blog!', excerpt: `Here you can read my thoughts on things that matter to me. From technology to my travels I write articles over diverse topics so be sure to search for anything you might be interested in!`
   };
 
 export default function Blog() {
