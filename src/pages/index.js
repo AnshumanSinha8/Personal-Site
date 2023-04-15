@@ -7,6 +7,10 @@ import Contact from '../components/HomeComponents/Contact.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const headerContent = {
+  title: 'Hey, I\'m Anshu', excerpt: 'A freelance software engineer - welcome to my website!'
+};
+
 export default function Home() {
   return (
     <>
@@ -16,9 +20,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className={styles.home}>
         <div>
-          <Header></Header>
+          <Header headerContent={headerContent}/>
           <Navigation></Navigation>
           <Contact></Contact>
         </div>
