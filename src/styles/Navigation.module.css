@@ -15,3 +15,8 @@
   margin-right: 10px;
   font-family: 'Montserrat', sans-serif;
 }
+
+.box.active {
+  background-color: black;
+  color: white;
+  }
