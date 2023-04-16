@@ -21,7 +21,7 @@ export default function Home() {
         <div>
           <Header headerContent={headerContent}/>
           <Navigation></Navigation>
-          <Contact></Contact>
+          <Contact />
         </div>
       </main>
     </>
