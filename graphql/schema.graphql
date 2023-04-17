@@ -1,0 +1,10 @@
+type testPosts {
+  id: Int!
+  title: String!
+  content: String!
+}
+
+type Query {
+  getTitlesById(id: Int!): title
+  getContent: [content]
+}
