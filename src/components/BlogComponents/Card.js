@@ -6,7 +6,7 @@ function Card({ post }){
     return(
         <div className={styles.card}>
             {post.title}{' '}
-            {post.excerpt}
+            {post.content}
         </div>
     )
 }
