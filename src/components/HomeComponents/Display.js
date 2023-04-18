@@ -32,6 +32,8 @@ function Display() {
         data.getTestPosts.map((post) => (
           <div key={post.id}>
             <h1> Post: {post.id} </h1>
+            <h1> title: {post.title}</h1>
+            <h1> content: {post.content}</h1>
           </div>
         ))}
     </div>
