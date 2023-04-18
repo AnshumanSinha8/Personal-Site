@@ -1,5 +1,6 @@
-// If connected to a database, it is here in the resolvers functions that we will write our API calls to get data from the database!
-// Still need to learn how to connect to PlanetScale database though.
+// If you're building a GraphQL API, you can use Prisma Client in your resolvers to read and write 
+// data in the database based on incoming queries and mutations.
+
 const { testPosts } = require ("../dummyData");
 
 const resolvers = {

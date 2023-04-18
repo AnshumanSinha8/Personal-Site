@@ -6,3 +6,14 @@ database.
 
 - Also,remember to run 'npx prisma generate' anytime you edit your prisma schema. This way you can automatically
 update your Prisma Client library as well.
+
+- To explore the data in your database, you can run: '$ npx prisma studio'. This will allow you to explore the database in Prisma Studio.
+
+
+## Change the database schema (e.g. add more tables)
+To evolve the app, you need to follow this flow:
+
+- Manually adjust your database schema using SQL
+- Re-introspect your database
+- Optionally re-configure your Prisma Client API
+- Re-generate Prisma Client
