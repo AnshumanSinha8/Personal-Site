@@ -1,14 +1,17 @@
 // If you're building a GraphQL API, you can use Prisma Client in your resolvers to read and write 
 // data in the database based on incoming queries and mutations.
 
-const { testPosts } = require ("../dummyData");
+const { PrismaClient } = require('@prisma/client');
+
+const prisma = new PrismaClient();
 
 const resolvers = {
-    Query: {
-        getTestPosts(){
-            return testPosts;
-        }
-    }
-}
+  Query: {
+    async getTestPosts() {
+      const testPosts = await prisma.testPosts.findMany();
+      return testPosts;
+    },
+  },
+};
 
 module.exports = { resolvers };
