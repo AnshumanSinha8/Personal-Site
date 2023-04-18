@@ -3,8 +3,6 @@ const { typeDefs } = require ("./graphql/typeDefs.js");
 const { resolvers } = require("./graphql/resolvers");
 const { PrismaClient } = require('@prisma/client');
 
-const prisma = new PrismaClient();
-
 const server = new ApolloServer({
   typeDefs,
   resolvers,
