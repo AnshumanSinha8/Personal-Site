@@ -5,7 +5,9 @@ import Header from '../components/Header.js'
 import PageSelector from '../components/BlogComponents/PageSelector.js'
 import Filter from '../components/BlogComponents/Filter.js';
 import styles from '../styles/BlogStyles/Blog.module.css';
+import Display from '../components/HomeComponents/Display.js';
 
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const posts = [
     {title: 'testing', content: 'Learn Testing'},
@@ -16,19 +18,27 @@ const headerContent = {
   };
 
 export default function Blog() {
+    const client = new ApolloClient({
+        cache: new InMemoryCache(),
+        uri: 'http://localhost:4000/graphql'
+      });
+      
     return (
-        <div className={styles.blog}>
-            <Header headerContent={headerContent}/>
-            <Navigation />
-            <Filter />
-            <div className={styles.postsContainer}>
-                {posts.map((post) => ( <Card post={post} key={post.title}/>
-                    ))
-                }
+        <ApolloProvider client={client}>
+            <div className={styles.blog}>
+                <Header headerContent={headerContent}/>
+                <Navigation />
+                <Filter />
+                <Display />
+                <div className={styles.postsContainer}>
+                    {posts.map((post) => ( <Card post={post} key={post.title}/>
+                        ))
+                    }
+                </div>
+                <div>
+                    <PageSelector />
+                </div>
             </div>
-            <div>
-                <PageSelector />
-            </div>
-        </div>
+        </ApolloProvider>
     )
 }
