@@ -1,6 +1,5 @@
 const { ApolloServer } = require ("apollo-server")
 const { typeDefs } = require ("./graphql/typeDefs.js")
-// import { resolvers } from "./graphql/resolvers.js"
 const { resolvers } = require("./graphql/resolvers");
 
 
