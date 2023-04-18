@@ -5,10 +5,17 @@ const typeDefs = gql`
         id: Int!
         title: String!
         content: String!
+        topic: Topic!
     }
 
     type Query{
         getTestPosts: [testPosts!]!
+    }
+
+    enum Topic {
+        Technology
+        Adventure
+        Story
     }
 `
 
