@@ -1,6 +1,5 @@
 import Card from './Card.js';
 
-
 const posts = [
     {title: 'testing', content: 'Learn Testing'},
     {title: 'React', content: 'Learn React'}

@@ -24,7 +24,6 @@ export default function Blog() {
                 <Header headerContent={headerContent}/>
                 <Navigation />
                 <Filter />
-                {/* <Display /> */}
                 <CardContainer />
                 <div>
                     <PageSelector />

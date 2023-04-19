@@ -5,7 +5,7 @@ const typeDefs = gql`
         id: Int!
         title: String!
         content: String!
-        topic: Topic!
+        topic: Topic
     }
 
     type Query{
