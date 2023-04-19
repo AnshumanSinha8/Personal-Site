@@ -30,7 +30,7 @@ function Card({ post }){
     return(
         <div className={styles.card}>
             {post.title}{' '}
-            {post.content}
+            {post.content.substring(0, 100)}...
         </div>
     )
 }
