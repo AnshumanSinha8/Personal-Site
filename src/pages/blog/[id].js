@@ -14,10 +14,12 @@ const FETCH_COMPONENT_BY_ID = gql`
 function BlogPost() {
     const router = useRouter();
     const { id } = router.query;
+    const parsedId = parseInt(id, 10);
 
     const { loading, error, data } = useQuery(FETCH_COMPONENT_BY_ID, {
-      variables: { id },
+      variables: { id: parsedId },
     });
+
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
@@ -32,7 +34,6 @@ function BlogPost() {
         </div>
         </ApolloProvider>
     );
-
 }
 
 export default BlogPost;

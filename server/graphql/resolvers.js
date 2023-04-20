@@ -17,7 +17,7 @@ const resolvers = {
           id: id,
         },
       });
-      return testPosts;
+      return testPost;
     },
   }
 };
