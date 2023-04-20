@@ -11,7 +11,15 @@ const resolvers = {
       const testPosts = await prisma.testPosts.findMany();
       return testPosts;
     },
-  },
+    async getTestPostById(parent, { id }) {
+      const testPost = await prisma.testPosts.findUnique({
+        where: {
+          id: id,
+        },
+      });
+      return testPosts;
+    },
+  }
 };
 
 module.exports = { resolvers };
