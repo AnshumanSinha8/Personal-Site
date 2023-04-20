@@ -10,6 +10,7 @@ const typeDefs = gql`
 
     type Query{
         getTestPosts: [testPosts!]!
+        getTestPostById(id: Int!): testPosts
     }
 
     enum Topic {

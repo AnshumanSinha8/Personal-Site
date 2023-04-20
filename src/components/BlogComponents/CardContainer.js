@@ -1,5 +1,6 @@
 import Card from './Card.js';
 import { useQuery, gql } from '@apollo/client';
+// import { QUERY_ALL_POSTS } from '../server/graphql/queries';
 
 const QUERY_ALL_POSTS = gql`
 query GetTestPosts {

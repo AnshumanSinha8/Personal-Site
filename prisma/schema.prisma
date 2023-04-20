@@ -13,12 +13,3 @@ model testPosts {
   title   String @db.VarChar(50)
   content String @db.LongText
 }
-
-model d4fd9c_588b_51bd_880c_9ce10f646810_20230418115826_vrepl {
-  id      Int    @id @default(autoincrement())
-  title   String @db.VarChar(50)
-  topic   String @db.VarChar(50)
-  content String @db.LongText
-
-  @@map("_02d4fd9c_588b_51bd_880c_9ce10f646810_20230418115826_vrepl")
-}
