@@ -5,7 +5,7 @@ import React from 'react';
 function PageSelector(){
     return(
         <div className={styles.pageSelector}>
-            Page Selector
+            Page Selector (under construction!)
         </div>
     )
 }
