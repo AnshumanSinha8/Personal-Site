@@ -7,9 +7,9 @@ function Navigation () {
   
   return (
     <div className={styles.navigation}>
-      <a href="/projects" className={`${styles.box} ${router.pathname === '/projects' ? styles.active : ''}`}>Projects</a>
+      <Link href="/projects" className={`${styles.box} ${router.pathname === '/projects' ? styles.active : ''}`}>Projects</Link>
       <Link href="/" className={`${styles.box} ${router.pathname === '/' ? styles.active : ''}`}>Home</Link>
-      <a href="/blog" className={`${styles.box} ${router.pathname === '/blog' ? styles.active : ''}`}>Blog</a>
+      <Link href="/blog" className={`${styles.box} ${router.pathname === '/blog' ? styles.active : ''}`}>Blog</Link>
     </div>
   )
 }
