@@ -6,9 +6,12 @@ This project serves as a place for me to experiment on technologies but also hav
 Whether you're a fellow NYU alumn or stranger everything here is open-source and I try my best to explain each technology or decision I've made through an article in my 'blog' page. Please feel free to clone this open-source project and read my thoughts whenever you might have questions about what I have done. The database I have used is a MySQL database in a production enviornment through PlanetScale so to learn more about connecting between the backend of this application and the frontend, check out some of the blog posts to find out how I did it and what schemas I used!
 
 ## Getting Started
+To view this project on the web, please navigate to: https://personal-site-anshumansinha8.vercel.app/
+
 To run this project locally:
 - clone the repository
 - npm install dependencies
+- npm run start
 - npm run dev
 - view on https://localhost:3000
 
