@@ -1,5 +1,6 @@
 import styles from 'src/styles/HomeStyles/Contact.module.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link'
 import React, { useState } from 'react';
 
 function Contact() {
@@ -44,18 +45,18 @@ function Contact() {
             </div>
             <br />
         <div>
-          <a href="https://github.com/AnshumanSinha8" target="_blank">
+          <Link href="https://github.com/AnshumanSinha8" target="_blank">
             <div className={styles.profile}>
               <FaGithub />
               Github
               </div>
-            </a>
-          <a href="https://www.linkedin.com/in/anshuman-sinha1998/" target="_blank">
+            </Link>
+          <Link href="https://www.linkedin.com/in/anshuman-sinha1998/" target="_blank">
             <div className={styles.profile}>
               <FaLinkedin />
               Linkedin
               </div>
-            </a>
+            </Link>
             </div>
             </div>
     );
