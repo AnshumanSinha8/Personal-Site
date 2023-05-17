@@ -26,9 +26,6 @@ export default function Projects() {
                     ))
                 }
             </div>
-            <div>
-                temp
-            </div>
         </div>
     )
 }
