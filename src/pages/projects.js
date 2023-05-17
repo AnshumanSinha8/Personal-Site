@@ -10,7 +10,6 @@ const projects = [
     {title: 'PTC: ', excerpt: 'Having trouble scheduling those pesky Parent Teacher Conferences?'},
     {title: 'Snake 3000: ', excerpt: 'An early project to build a retro-styled snake game'},
     {title: 'Railbird: ', excerpt: 'A Freelanced Dashboard Template for Railbird, a sports contract market'}
-
 ]
 const headerContent = {
     title: 'Welcome to my projects!', excerpt: `Take a look around and check out a few projects I'm particularly proud of!`
