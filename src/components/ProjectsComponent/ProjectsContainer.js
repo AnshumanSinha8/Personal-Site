@@ -6,8 +6,8 @@ function ProjectsContainer({ project }) {
     return (
       <div>
         <a href={project.link} target ="_blank" rel="noopener noreferrer">
+          {project.title}
         </a>
-        {project.title}
         {project.excerpt}
       </div>
     );
