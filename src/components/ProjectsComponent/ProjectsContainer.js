@@ -5,7 +5,9 @@ import React from 'react';
 function ProjectsContainer({ project }) {
     return (
       <div>
-        {project.title}
+        <a href={project.link} target ="_blank" rel="noopener noreferrer">
+          {project.title}
+        </a>
         {project.excerpt}
       </div>
     );
