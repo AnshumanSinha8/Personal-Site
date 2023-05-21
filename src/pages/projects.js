@@ -7,8 +7,8 @@ const projects = [
     {title: 'Jester: ', excerpt: 'A low code Jest testing suite generator', link: 'https://jester.software/'},
     {title: 'BookBeats: ', excerpt: 'An application to match your current book with a stylized playlist', link: 'https://github.com/octo-code-4/bookbeats'},
     {title: 'WispN: ', excerpt: 'Let us Wisp you away to your next National Park journey!', link: 'https://github.com/wispn-dev/wispn'},
-    {title: 'PTC: ', excerpt: 'Having trouble scheduling those pesky Parent Teacher Conferences?', link: 'https://github.com/Advanced-Education/pt-conf'},
-    {title: 'Snake 3000: ', excerpt: 'An early project to build a retro-styled snake game', link: 'https://jester.software/'},
+    {title: 'PTC: ', excerpt: 'A tool to help you schedule Parent-Teacher conferences more easily.', link: 'https://github.com/Advanced-Education/pt-conf'},
+    {title: 'Snake 3000: ', excerpt: 'An early project to build a retro-styled snake game :s', link: 'https://jester.software/'},
     {title: 'Railbird: ', excerpt: 'A Freelanced Dashboard Template for Railbird, a sports contract market', link: 'https://github.com/AnshumanSinha8/Railbird-AS'}
 ]
 const headerContent = {
