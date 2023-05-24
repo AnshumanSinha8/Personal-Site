@@ -13,6 +13,8 @@ function Contact() {
       setCharactersLeft(charactersLeft);
     }
 
+    
+
     return (
       <div className={styles.contact}>
         <div>
