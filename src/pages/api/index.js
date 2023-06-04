@@ -1,43 +1,22 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
-}
+const { ApolloServer } = require("apollo-server");
+const { typeDefs } = require("../../server/graphql/typeDefs.js");
+const { resolvers } = require("../../server/graphql/resolvers.js");
+const { PrismaClient } = require('@prisma/client');
 
+const prisma = new PrismaClient();
 
-// import useSWR from 'swr'
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  context: () => {
+    return {
+      prisma,
+    };
+  },
+});
 
-// const fetcher = (query: string) =>
-//   fetch('/api/graphql', {
-//     method: 'POST',
-//     headers: {
-//       'Content-type': 'application/json',
-//     },
-//     body: JSON.stringify({ query }),
-//   })
-//     .then((res) => res.json())
-//     .then((json) => json.data)
-
-// type Data = {
-//   users: {
-//     name: string
-//   }[]
-// }
-
-// export default function Index() {
-//   const { data, error, isLoading } = useSWR<Data>('{ users { name } }', fetcher)
-
-//   if (error) return <div>Failed to load</div>
-//   if (isLoading) return <div>Loading...</div>
-//   if (!data) return null
-
-//   const { users } = data
-
-//   return (
-//     <div>
-//       {users.map((user, index) => (
-//         <div key={index}>{user.name}</div>
-//       ))}
-//     </div>
-//   )
-// }
+server.listen().then(({ url }) => {
+  console.log(`Server is listening on Port: ${url}!`);
+});
