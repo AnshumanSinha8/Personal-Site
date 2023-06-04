@@ -7,6 +7,10 @@ Whether you're a fellow NYU alumn or stranger everything here is open-source and
 
 ## Getting Started
 To view this project on the web, please navigate to: https://personal-site-anshumansinha8.vercel.app/
+=======
+To view this project online:
+- Navigate to: https://personal-site-anshumansinha8.vercel.app/blog
+
 
 To run this project locally:
 - clone the repository
