@@ -1,31 +1,25 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+const { ApolloServer } = require("apollo-server");
+const { typeDefs } = require("./graphql/typeDefs.js");
+const { resolvers } = require("./graphql/resolvers.js");
+const { PrismaClient } = require('@prisma/client');
 
-// const { ApolloServer } = require("apollo-server");
-// const { typeDefs } = require("../../server/graphql/typeDefs.js");
-// const { resolvers } = require("../../server/graphql/resolvers.js");
-// const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
 
-// const prisma = new PrismaClient();
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  context: () => {
+    return {
+      prisma,
+    };
+  },
+});
 
-// const server = new ApolloServer({
-//   typeDefs,
-//   resolvers,
-//   context: () => {
-//     return {
-//       prisma,
-//     };
-//   },
-// });
+server.listen().then(({ url }) => {
+  console.log(`Server is listening on Port: ${url}!`);
+});
 
-// server.listen().then(({ url }) => {
-//   console.log(`Server is listening on Port: ${url}!`);
-// });
-
-// console.log('Server configuration completed.');
-
-
-
-/* 
+/*
 So I think that I'm finally starting to understand a bit more on how exactly I should be deploying this with all of the
 technologies together (Prisma, GraphQL, Apollo Server, Vercel, Next.js). I'm going to use this space
 to note what steps I believe I need to take to set up this project as serverless.
