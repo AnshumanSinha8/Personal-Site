@@ -2,7 +2,7 @@ import 'src/styles/globals.css'
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: '/api/graphql',
+  uri: 'https://personal-site-anshumansinha8.vercel.app/api/graphql',
   cache: new InMemoryCache()
 });
 
