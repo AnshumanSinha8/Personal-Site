@@ -5,10 +5,13 @@ const { PrismaClient } = require('@prisma/client');
 
 const prisma = new PrismaClient();
 
+
+console.log("Creating ApolloServer instance...");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: () => {
+    console.log("Inside context function...");
     return {
       prisma,
     };

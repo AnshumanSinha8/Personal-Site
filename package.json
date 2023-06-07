@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "nodemon src/pages/api/index.js",
+    "start": "nodemon src/pages/api/graphql.js",
     "lint": "next lint"
   },
   "dependencies": {
