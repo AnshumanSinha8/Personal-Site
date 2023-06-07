@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "nodemon src/pages/api/graphql.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:generate": "prisma generate"
   },
   "dependencies": {
     "@apollo/client": "^3.7.12",
