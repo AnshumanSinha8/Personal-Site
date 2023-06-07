@@ -1,14 +1,17 @@
 const { ApolloServer } = require("apollo-server");
-const { typeDefs } = require("./graphql/typeDefs.js");
-const { resolvers } = require("./graphql/resolvers.js");
+const { typeDefs } = require("./typeDefs.js");
+const { resolvers } = require("./resolvers.js");
 const { PrismaClient } = require('@prisma/client');
 
 const prisma = new PrismaClient();
 
+
+console.log("Creating ApolloServer instance...");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: () => {
+    console.log("Inside context function...");
     return {
       prisma,
     };
@@ -50,6 +53,9 @@ I'm unsure if the approach is the same but I think it makes sense in theory.
   inside the pages/api directory but rather the entry point for our application so we can make api requests at all
   possible pages inside our application. So essentially, I need to try moving the Apollo Client generation from 
   pages/api/index.js to src/pages/index.js.
+
+
+
 
 Finally:
 - Need to create Prisma migrations.
